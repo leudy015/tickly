@@ -4,20 +4,21 @@
 import PackageDescription
 
 let package = Package(
-    name: "TicklySessionRecorderPackage",
+    name: "SessionRecorder",
+    platforms: [
+        .iOS(.v12) // Define the minimum version of iOS your package supports
+    ],
     products: [
-        // Products define the executables and libraries a package produces, making them visible to other packages.
         .library(
-            name: "TicklySessionRecorderPackage",
-            targets: ["TicklySessionRecorderPackage"]),
+            name: "SessionRecorder",
+            targets: ["SessionRecorder"]),
     ],
     targets: [
-        // Targets are the basic building blocks of a package, defining a module or a test suite.
-        // Targets can depend on other targets in this package and products from dependencies.
         .target(
-            name: "TicklySessionRecorderPackage"),
+            name: "SessionRecorder",
+            dependencies: []),
         .testTarget(
-            name: "TicklySessionRecorderPackageTests",
-            dependencies: ["TicklySessionRecorderPackage"]),
+            name: "SessionRecorderTests",
+            dependencies: ["SessionRecorder"]),
     ]
 )
