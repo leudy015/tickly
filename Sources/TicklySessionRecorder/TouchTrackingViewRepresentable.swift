@@ -8,7 +8,12 @@
 import SwiftUI
 import TicklySessionRecorder
 
-public struct TouchTrackingViewRepresentable: UIViewRepresentable {   // Asegúrate de que sea 'public'
+// Cambia el nivel de protección a 'public'
+public struct TouchTrackingViewRepresentable: UIViewRepresentable {
+
+    // Cambia el inicializador a 'public'
+    public init() {}
+
     public func makeUIView(context: Context) -> TouchTrackingView {
         return TouchTrackingView()
     }
