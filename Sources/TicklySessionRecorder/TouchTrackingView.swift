@@ -8,12 +8,10 @@
 import SwiftUI
 import TicklySessionRecorder
 
-public struct TouchTrackingViewRepresentable: UIViewRepresentable {
-    func makeUIView(context: Context) -> TouchTrackingView {
+public struct TouchTrackingViewRepresentable: UIViewRepresentable {   // Asegúrate de que sea 'public'
+    public func makeUIView(context: Context) -> TouchTrackingView {
         return TouchTrackingView()
     }
 
-    func updateUIView(_ uiView: TouchTrackingView, context: Context) {
-        // Aquí puedes actualizar la vista si el estado cambia
-    }
+    public func updateUIView(_ uiView: TouchTrackingView, context: Context) {}
 }
