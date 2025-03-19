@@ -4,21 +4,21 @@
 import PackageDescription
 
 let package = Package(
-    name: "SessionRecorder",
+    name: "TicklySessionRecorder",
     platforms: [
         .iOS(.v12) // Define the minimum version of iOS your package supports
     ],
     products: [
         .library(
-            name: "SessionRecorder",
-            targets: ["SessionRecorder"]),
+            name: "TicklySessionRecorder",
+            targets: ["TicklySessionRecorder"]),
     ],
     targets: [
         .target(
-            name: "SessionRecorder",
+            name: "TicklySessionRecorder",
             dependencies: []),
         .testTarget(
-            name: "SessionRecorderTests",
-            dependencies: ["SessionRecorder"]),
+            name: "TicklySessionRecorderTests",
+            dependencies: ["TicklySessionRecorder"]),
     ]
 )
