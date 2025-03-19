@@ -13,5 +13,7 @@ struct TouchTrackingViewRepresentable: UIViewRepresentable {
         return TouchTrackingView()
     }
 
-    func updateUIView(_ uiView: TouchTrackingView, context: Context) {}
+    func updateUIView(_ uiView: TouchTrackingView, context: Context) {
+        // Aquí puedes actualizar la vista si el estado cambia
+    }
 }
