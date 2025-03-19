@@ -8,7 +8,7 @@
 import SwiftUI
 import TicklySessionRecorder
 
-struct TouchTrackingViewRepresentable: UIViewRepresentable {
+public struct TouchTrackingViewRepresentable: UIViewRepresentable {
     func makeUIView(context: Context) -> TouchTrackingView {
         return TouchTrackingView()
     }
